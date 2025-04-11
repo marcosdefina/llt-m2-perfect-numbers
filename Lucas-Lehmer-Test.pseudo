@@ -1,0 +1,7 @@
+// Determine if Mp = 2p − 1 is prime for p > 2
+Lucas–Lehmer(p)
+    var s = 4
+    var M = 2p − 1
+    repeat p − 2 times:
+        s = ((s × s) − 2) mod M
+    if s == 0 return PRIME else return COMPOSITE
